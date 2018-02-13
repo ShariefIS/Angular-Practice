@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>new</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="module.js"></script>
+</head>
+<body ng-app="Cont" ng-controller="countCntrl">
+
+        <div style="background-color: blueviolet">
+            Hello brooo
+            <p>My first expression: {{ 5 + 5 }}</p>
+            
+            <input style="width:45px" class="form-control-sm" type="text" ng-model="counter">
+            <div class="btn-group btn-block" role="group" style="width:100px" aria-label="plus-minus">
+                <button type="button" ng-click="counter=counter-1" class="btn btn-sm btn-danger minus-button merge-top-left-button" ng-disabled="counter==0">
+                    <b>&minus;</b>
+                </button>
+                <button type="button" ng-click="counter=counter+1"class="btn btn-sm btn-success plus-button merge-top-right-button"ng-disabled="counter==10">
+                    <b>&plus;</b>
+                </button>
+            </div>
+        </div>
+    
+        <div class="custom-control custom-control-inline custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="customCheck1" ng-model="customCheck1">
+            <label class="custom-control-label" for="customCheck1">Ambulance</label>
+        </div>
+        <div class="custom-control custom-control-inline custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="customCheck2" ng-model="customCheck2">
+            <label class="custom-control-label" for="customCheck2">Police</label>
+        </div>
+        <div class="custom-control custom-control-inline custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="customCheck3" ng-model="customCheck3">
+            <label class="custom-control-label" for="customCheck3">Fire Station</label>
+        </div>
+    </body>
+</html>
